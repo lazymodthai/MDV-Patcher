@@ -1,0 +1,27 @@
+﻿<Window x:Class="MDV_Patcher.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MDV_Patcher"
+        mc:Ignorable="d"
+        WindowStartupLocation="CenterScreen"
+        ContentRendered="Window_ContentRendered"
+        WindowStyle="None"
+        Title="MDV Patcher" Height="200" Width="500" ResizeMode="NoResize" Icon="/ms-icon-144x144.png">
+    <Window.Background>
+        <ImageBrush/>
+    </Window.Background>
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="/bg.jpg"/>
+        </Grid.Background>
+        <TextBlock Name="VersionText" VerticalAlignment="Bottom" HorizontalAlignment="Right" FontSize="12" Foreground="White" Margin="0,0,20,5"/>
+        <Button Name="PlayButton" Content="ตรวจสอบการอัปเดต" Click="PlayButton_Click" Height="40" FontSize="18" FontWeight="Bold" Foreground="Black" Margin="27,0,0,26" VerticalAlignment="Bottom" HorizontalAlignment="Left" Width="442" FontFamily="Bai Jamjuree"/>
+        <Image Margin="20,10,235,77" Source="/MDV_Logo_Full.png" Stretch="Fill"/>
+        <Label Content="ม็อดภาษาไทย" HorizontalAlignment="Left" Margin="317,0,0,0" VerticalAlignment="Center" Foreground="White" FontFamily="Bai Jamjuree Medium" Width="183" FontSize="20"/>
+        <Label Content="ตัวช่วยดาวน์โหลด" HorizontalAlignment="Left" Margin="302,38,0,0" VerticalAlignment="Top" Foreground="White" FontFamily="Bai Jamjuree Medium" Width="183" FontSize="20"/>
+        <Label Content="แปลไทยโดย - Facebook Page: ว่างๆก็หาเกมมาแปล" VerticalAlignment="Bottom" HorizontalAlignment="Left" Foreground="White" FontFamily="Bai Jamjuree Medium" Width="397" FontSize="12" Margin="22,0,0,0"/>
+        <Button Content="X" HorizontalAlignment="Left" Height="23" Margin="448,10,0,0" VerticalAlignment="Top" Width="32" Background="Red" FontFamily="Bai Jamjuree SemiBold" Foreground="White" Click="Button_Click"/>
+    </Grid>
+</Window>

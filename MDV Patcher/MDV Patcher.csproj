@@ -1,0 +1,42 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <RootNamespace>MDV_Patcher</RootNamespace>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+    <PackageIcon>ms-icon-144x144.png</PackageIcon>
+    <ApplicationIcon>Images\favicon.ico</ApplicationIcon>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="bg.jpg" />
+    <None Remove="Images\MDV_Logo_Full.png" />
+    <None Remove="MDV_Logo_Full.png" />
+    <None Remove="ms-icon-144x144.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Images\favicon.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="bg.jpg" />
+    <Resource Include="Images\MDV_Logo_Full.png" />
+    <Resource Include="MDV_Logo_Full.png" />
+    <Resource Include="ms-icon-144x144.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="Images\favicon.ico">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+    <None Update="Images\ms-icon-144x144.png">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
+
+</Project>
